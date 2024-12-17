@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Christmas Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Snowfall Background -->
+    <div class="snowfall"></div>
+
+    <!-- Santa and Reindeer -->
+    <div class="santa-reindeer"></div>
+
+    <!-- Christmas Tree -->
+    <div class="christmas-tree"></div>
+
+    <!-- Story Generator -->
+    <div class="container">
+        <h1 class="title">🎄 Magical Christmas Story Generator 🎁</h1>
+        <p class="subtitle">Fill in your details to create a magical Christmas tale!</p>
+
+        <form id="story-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="character" placeholder="Favorite Christmas Character" required>
+            <input type="text" id="pet" placeholder="Your Pet's Name" required>
+            <button type="submit">✨ Generate Story ✨</button>
+        </form>
+
+        <div id="loading" class="hidden">✨ Sprinkling Christmas Magic... 🎄</div>
+        <div id="story-output" class="hidden">
+            <h2>Your Story 🎅</h2>
+            <p id="story-text" class="animated-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
